@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Test</display-name>
+	<!-- 예제 1번 -->
+	<servlet>
+		<servlet-name>UrlMappingEx01</servlet-name> <!-- 이름 지으면 됨. -->
+		<servlet-class>com.test.lesson01.UrlMappingEx01</servlet-class> <!-- 클래스가 어디있느냐? -->
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UrlMappingEx01</servlet-name> <!-- 이 이름의 매핑이 될것이다. / 윗쪽 이름과 같아야함 -->
+		<url-pattern>/lesson01/ex01</url-pattern> <!-- /로 반드시 실행 해야함. -->
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Quiz01</servlet-name>
+		<servlet-class>com.test.lesson01.Quiz01</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Quiz01</servlet-name>
+		<url-pattern>/lesson01/quiz01</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Quiz02</servlet-name>
+		<servlet-class>com.test.lesson01.Quiz02</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Quiz02</servlet-name>
+		<url-pattern>/lesson01/quiz02</url-pattern>
+	</servlet-mapping>
+
+</web-app>
