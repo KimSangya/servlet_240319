@@ -41,8 +41,14 @@ public class Quiz08 extends HttpServlet{
 		while(iter.hasNext()) {
 			String line = iter.next();
 			if(line.contains(search)) {
-				line.replace(search, "<b>" + search +"</b>");
-				out.print(line + "<br>");
+//				out.print(line + "<br>");
+				// 1번째 방식 / 간단한 방식, 가장 좋은 방식
+//				line =  line.replace(search, "<b>" + search + "</b>");
+//				out.print(line + "<br>");
+				// 2번째 방식
+//				String[] words = line.split(search);
+//				out.print(words[0] + "<b>" + search + "</b>" + words[1] + "<br>");
+				
 			}
 		}
 		out.print("</body></html>");
